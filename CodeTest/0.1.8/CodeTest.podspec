@@ -35,13 +35,14 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'CodeTest' => ['CodeTest/Assets/*.png']
   # }
-  s.public_header_files = 'CodeTest/Classes/**/**/**/*.h'
+  s.public_header_files = 'CodeTest/Classes/**/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
     s.subspec 'Admob' do |f|
         f.source_files = ['CodeTest/Classes/SDK/Core/*.{h,m}','CodeTest/Classes/SDK/Adapters/Baidu/*.{h,m}']
         f.ios.deployment_target = '8.0'
+    
     end
 
     s.subspec 'Baidu' do |f|
